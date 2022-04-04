@@ -20,10 +20,41 @@ A|-----------------------------------------------8-8-8-8-8-8-8-8-----|
 E|-------------------------------------------------------------------|
 
 each number represents the fret of the guitar to be used, the letters at the beginning are the tuning of the guitar. 
-ù
+
 ## first version - 4/4 
 
-At the moment the program can successfully transpose the tablature, rewrite and update the tuning, and save the tablature in a .txt file by adding information about the transposition. 
+At the moment the program can successfully transpose the tablature even when it contains part of the text, rewrite and update the tuning, and save the tablature in a .txt file by adding information on the transposition. 
 
-### Problem : 
-when scaling the note in question below the lowest fret. the weights are updated by adding the note to the next string. However, in this way the "pattern" can be lost.   
+###problem : 
+when scaling the note in question below the lowest fret. the weights are updated by adding the note to the next string. However, in this way you can lose the "pattern" and lose the closeness of the notes to be played. 
+
+## txt file in output with translated notes 
+
+song : translate_Jhonny_prova.txt
+
+
+ transposed from E to D
+
+
+original tuning : ['e', 'a', 'd', 'g', 'b', 'e']
+
+final tuning : ['d', 'a', 'f#', 'd', 'a', 'd']
+
+
+
+
+
+
+d|----------5/6-6-6-5/6-6-6-6-6-6------------------------------------|
+
+a|-------6--5/6-6-6-5/6-6-6-6-6-6-9-8-6-6----------------------------|
+
+f#|---5h6--------------------------------5h6--------------------------|
+
+d|-6----------------------------------------6-4--6-6-6-6-6-6-6-6-----|
+
+a|-----------------------------------------------6-6-6-6-6-6-6-6-----|
+
+d|-------------------------------------------------------------------|
+
+
